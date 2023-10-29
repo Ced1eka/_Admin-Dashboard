@@ -1,17 +1,30 @@
-*, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-    }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
 
-    img, picture, video, canvas, svg {
-      display: block;
-      max-width: 100%;
-    }
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+svg {
+  width: 30px;
+}
+.sidebar svg {
+  width: 30px;
+  fill: #fefffe;
+}
 
-    body{
-      background-color: #E3E9F0;
-    }
+body {
+  background-color: #e3e9f0;
+}
 
-    .grid{
-      display: grid;
-    }
+.grid {
+  display: grid;
+}
