@@ -9,5 +9,9 @@
     }
 
     body{
-      background-color: bisque;
+      background-color: #E3E9F0;
+    }
+
+    .grid{
+      display: grid;
     }
