@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Fira+Sans:wght@400;500;600;700;800;900&family=Josefin+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="main-container">
-      <div class="sidebar">
-        <div class="sidebar-title">
+    <div class="main-container grid">
+      <div class="sidebar grid">
+        <div class="sidebar-title grid">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <title>view-dashboard</title>
             <path
               d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"
             />
           </svg>
-          <h3>Dashboard</h3>
+          <p>Dashboard</p>
         </div>
-        <div class="sidebar-nav-menu">
+        <div class="sidebar-nav-menu grid">
           <div class="menu home">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <title>home</title>
@@ -72,8 +78,8 @@
             <p>Communities</p>
           </div>
         </div>
-        <div class="sidebar-branding-menu">
-          <div class="settings">
+        <div class="sidebar-branding-menu grid">
+          <div class="menu settings">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <title>cog</title>
               <path
@@ -82,7 +88,7 @@
             </svg>
             <p>Settings</p>
           </div>
-          <div class="support">
+          <div class="menu support">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <title>help-box</title>
               <path
@@ -91,7 +97,7 @@
             </svg>
             <p>Support</p>
           </div>
-          <div class="privacy">
+          <div class="menu privacy">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <title>shield-check</title>
               <path
@@ -135,6 +141,7 @@
         </div>
       </div>
       <div class="mainbar">
+        <p><b>Your Projects</b></p>
         <div class="projects">
           <div class="card">
             <p><b>Super Cool Project</b></p>

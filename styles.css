@@ -23,8 +23,90 @@ svg {
 
 body {
   background-color: #e3e9f0;
+  font-family: system-ui, "Fira Code", monospace, "Fira Sans", sans-serif,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .grid {
   display: grid;
+}
+
+.main-container {
+  grid-template-columns: minmax(max-content 25%) 1fr;
+}
+.main-container img {
+  width: 3rem;
+  border-radius: 50%;
+}
+.sidebar {
+  grid-row: 1/3;
+  background-color: #1992d4;
+  grid-template-rows: 1fr repeat(2, 2fr);
+  grid-auto-rows: min-content;
+  padding: 1rem 0 0 1rem;
+align-content: start;
+
+
+}
+.sidebar-title {
+  border: 1px solid green;
+  width: 100%;
+  margin-top: 2rem;
+  align-self:start;
+  color: #F0F9FD;
+  grid-template-columns: 16% 3fr;
+  align-items: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  gap: .7rem;
+}
+
+.sidebar-title svg{
+  background-color:blue;
+  width: 150px;
+}
+
+.sidebar-nav-menu {
+  width: 100%;
+  grid-template-columns: 1fr;
+  align-content: start;
+  gap: 1rem;
+}
+.sidebar-nav-menu .menu {
+  display: grid;
+  grid-template-columns: 16% 3fr;
+  align-items: center;
+  /* gap: .7rem; */
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #F0F9FD;
+}
+.sidebar-branding-menu{
+justify-items: start;
+align-content: start;
+width: 100%;
+gap: 1rem;
+font-family: 'Fira Sans', sans-serif;
+font-weight: 700;
+font-size: 20px;
+color: #F0F9FD;
+}
+
+.sidebar-branding-menu .menu{
+  display: grid;
+  grid-template-columns: 16% 3fr;
+  align-items: center;
+  /* gap: .7rem; */
+  width: 100%;
+}
+
+.header {
+  grid-column: 2/3;
+}
+.mainbar {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
